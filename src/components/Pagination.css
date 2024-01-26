@@ -1,0 +1,84 @@
+/* Pagination.css */
+
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .delete-button {
+    background-color: #FF5071;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-right: auto; /* Move delete button to the left */
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .delete-button:hover {
+    background-color: #ff1f45;
+  }
+  
+  .pagination-list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto; /* Move pagination to the center */
+    margin-right: 10px;
+  }
+  
+  .pagination-list li {
+    background: #1990FF;
+    padding: 4px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    align-self: center;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .pagination-list li:hover {
+    transform: scale(1.1);
+  }
+  
+  .pagination-list li button {
+    background-color: #1990FF;
+    border: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .pagination-list button.active {
+    background-color: #5cb0ffdf;
+  }
+  
+  /* Mobile Responsiveness */
+  @media only screen and (max-width: 600px) {
+    .pagination-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .delete-button {
+      width: 100%;
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
+  
+    .pagination-list {
+      justify-content: space-around;
+      margin-left: 0;
+    }
+  }
+  

@@ -1,0 +1,72 @@
+/* table.css */
+
+table {
+  font-family: 'Arial', sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  border: 1px solid #e0e0e0;
+  padding: 16px;
+  text-align: left;
+}
+
+th {
+  background-color: #f8f8f8;
+  font-weight: bold;
+  color: #333;
+}
+
+.icons button {
+  margin: 0 8px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  color: #555;
+  transition: color 0.3s ease-in-out;
+}
+
+.icons button:hover {
+  color: #3498db;
+  transform: scale(1.1);
+}
+
+.selected-row {
+  background-color: #ecf0f5;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Button Styles */
+.icons button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Edit and Delete Button Styles */
+.icons button.edit {
+  color: #2ecc71;
+}
+
+.icons button.delete {
+  color: #e74c3c;
+}
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 600px) {
+  th, td {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .icons button {
+    margin: 0 6px;
+  }
+}
+

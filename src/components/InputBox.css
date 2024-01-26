@@ -1,0 +1,27 @@
+/* InputBox.css */
+.input-box-container {
+    margin: 10px;
+  }
+  
+  .search-input {
+    width: 100%;
+    height: 40px; /* Adjusted for better visibility */
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #4d90fe; /* Example focus color, adjust as needed */
+  }
+  
+  /* Mobile Responsiveness */
+  @media only screen and (max-width: 600px) {
+    .search-input {
+      height: 30px; /* Adjusted for smaller screens */
+    }
+  }
+  
